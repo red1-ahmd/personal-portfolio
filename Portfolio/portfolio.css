@@ -1,0 +1,398 @@
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Lilita-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Mulish;
+    src: url(fonts/Mulish-VariableFont_wght.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+button {
+    cursor: pointer;
+}
+.container {
+    background-image: url(ImagesNOthers/bgimg_trans3.png);
+    height: 90vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover; /*dosent allow the background image to be scrolled or zommed in/out*/
+    background-position: center;
+}
+.header {
+    background-color: black;
+    height: 10vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 100px;
+}
+.main::first-letter, .ridowan{
+    color: rgb(199, 52, 52);
+}
+.pRight{
+    color: white;
+    font-family: Mulish;
+}
+.headRight {
+    padding-right: 4cm;
+    display: flex;
+    gap: 50px;
+}
+/* header*/
+
+.welcome{
+   
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-right: 30px;
+    align-items: left;
+    padding-left: 100px;
+    padding-top: 210px;
+}
+.greeting{
+    color: white;
+    margin-right: 19px;
+    font-size: 40px;
+    font-family: Outfit;
+    font-weight: 1000;
+    margin-top: 0;
+    display: inline-block;
+}
+.rightNow {
+    color: white;
+    font-family: Mulish;
+    font-size: 20px;
+}
+.firstline {
+    display: block;
+}
+/* 1st part*/
+
+.about{
+    width: 100%;
+}
+/* default setting tabs*/
+.secContainer, .thirdContainer, .fourthContainer {
+    background-color: rgb(12, 12, 12);
+    height: 100vh;
+    color: white;
+}
+.abtME, .thrdTitle, .frthTitle{
+    display: flex;
+    justify-content: center;
+}
+.abtme, .thrdtitle, .frthtitle{
+    margin: 0;
+    padding-top: 5vh;
+    font-family: Outfit;
+    font-size: 4em;
+    font-weight: 700;   
+}
+/* default setting tabs*/
+.myimage {
+    background-image: url(ImagesNOthers/myimage2.jpg);
+    width: 25%;
+    margin-left: 100px;
+    height: 70vh;
+    margin-top: 3vh;
+    background-repeat: no-repeat;
+    background-size: cover; /*dosent allow the background image to be scrolled or zommed in/out*/
+    background-position: center;
+    border-radius: 10px;
+}
+.abouts{
+   display: flex;
+   justify-content: space-between;
+
+}
+.whomi{	
+    margin-right: 0px;
+	margin-left: 30px;
+    height: 68vh;
+    margin-top: 5vh;
+    width: 55%;
+	margin-bottom: -260px;
+	width: 750px;
+}
+.who {
+    margin: 0;
+    font-family: Outfit;
+    font-size: 2em;
+    font-weight: 600;
+}
+.whoiam {
+	font-family: Mulish;
+	color: white;
+	display: block;
+	font-size: medium;
+	font-weight: 100;
+	margin-top: 7px;
+	width: 750px;
+}
+.secConTxt {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+.tab {
+	padding-left: 30px;
+	margin-right: 400px;
+}
+.tabs {
+
+	display: flex;
+	justify-content: space-evenly;
+	
+	width: 65%;
+}
+.tabBTN {
+	font-family: Outfit;
+	font-weight: 300;
+	font-size: 1.1em;
+	background-color: rgb(12, 12, 12);
+	border: none;
+	color: white;
+	cursor: pointer	;
+}
+.descriptionTab {
+	font-family: Mulish;
+	font-weight: 100;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.descriptionTab {
+    display: none; /* Hide all tabs by default */
+}
+
+.tabBTN.active {
+    border-bottom: 2px solid rgb(199, 52, 52);
+}
+.nextLine {
+    display: block;
+    margin-top: 1em;
+}
+
+/* second part */
+
+.thirdContainer {
+    height: 100vh;
+}
+.certificate, .certificateR{
+    width: 300px;
+}
+
+.certificateR {
+    margin-top: 20px;
+}
+.certificates {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+.certificates img {
+    width: 300px;
+
+    cursor: pointer;
+}
+.certificates img:hover{
+    box-shadow: 0 0 50px rgb(182, 182, 182);
+    transition: 0.1s linear;
+}
+.certificates p {
+    text-align: center;
+    font-family: Mulish;  
+}
+
+.awarded {
+    margin-top: -10px;
+    color: rgb(95, 95, 95);
+    font-family: Mulish;
+    text-align: center;
+}
+.seeAll{
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+.seeall{
+    background-color: rgb(199, 52, 52);
+    color: white;
+    font-family: Mulish;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 20px;
+}
+.seeall:hover, .formfinalButton:hover {
+    color: rgb(199, 52, 52);
+    background-color: rgb(18, 18, 61);
+    box-shadow: 0 0 20px rgb(18, 18, 61);
+    transition: 0.3s linear;
+}
+.colorChange {
+    color: rgb(199, 52, 52);
+}
+/*final*/
+.formfill {
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 35px rgb(199, 52, 52);
+    height: 62vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+form {
+    margin-left: 15px;
+    margin-top: 10px;
+}
+label {
+    display: block;
+    font-family: Mulish;
+    font-size: 18px;
+    color: white;
+}
+input, .em, textarea{
+    padding: 1vh;
+    border-radius: 3px;
+    
+    margin-bottom: 10px;
+    font-family: Mulish;
+    font-size: 16px;
+    width: 90%;
+    background: transparent;
+    color: white;
+    border: 1px solid gray;
+}
+input:active {
+    border: 1px solid white;
+}
+#email {
+    width: 95%;
+}
+.name, .con {
+    width: 50%;
+}
+.names, .contactinfo {
+    display: flex;
+}
+#wtsp, #emaill, #media {
+    margin: 0;
+    width: 10%;
+}
+.opt {
+    display: inline-block;
+}
+.em {
+    margin-top: 0;
+    width: 30%;
+    padding: 7px;
+
+}
+
+.contacttype {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 18px;
+    
+    
+}
+.titler {
+    margin: 0px;
+    font-size: 18px;
+    font-family: Mulish;
+}
+.leaveMSG {
+    width: 95%;
+    
+}
+textarea {
+    margin-bottom: 5px;
+}
+.formfinalButton {
+    width: 97%;
+    background-color: rgb(199, 52, 52);
+    color: white;
+    border: none;
+    font-family:Mulish;
+    font-size: 17px;
+    height: 4vh;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(18, 18, 61);
+    height: 30vh;
+    margin-top: 46px;
+}
+footer .main {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.ftrUP {
+    margin-bottom: 10px;
+
+}
+#cred{
+    display: inline-block;
+}
+.creds {
+    display: flex;
+    justify-content: center;
+    font-family: Mulish;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fb, .in, .X {
+    width: 60px;
+}
+.insta {
+    width: 35px;
+    margin-top: 15px;
+}
+.fb {
+    margin-top: 2px;
+    width: 56px;
+    margin-left: -2px;
+}
+.in {
+    width: 90px;
+    margin-top: -15px;
+    
+}
+.X {
+    margin-top: -3px;
+    width: 70px;
+    margin-left: -22px;
+}
+.links{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+  
+}
